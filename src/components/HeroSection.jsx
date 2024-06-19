@@ -8,13 +8,13 @@ export default function HeroSection() {
         >
             <div className="flex-col flex md:flex-row justify-between ">
                 <div>
-                    <h1 className="font-bold text-[70px] md:text-[90px] bg-gradient-to-b from-black to-[#001354] text-transparent bg-clip-text">
+                    <h1 className="font-bold text-[40px] md:text-[90px] bg-gradient-to-b from-black to-[#001354] text-transparent bg-clip-text">
                         Leaders in Quality Engineering
                     </h1>
-                    <h5 className="text-[#010D3E] text-xl my-4 mr-10">
+                    <h5 className="text-[#010D3E] text-xl py-4 pr-10">
                         Excellence in Chemical, Pharmaceutical, and Dyes Process Equipment
                     </h5>
-                    <div className={'flex gap-10 mb-4'}>
+                    <div className={'flex gap-10 pb-4'}>
                         <button className="bg-[#2463EB] text-white font-semibold px-4 py-2 rounded-xl">
                             Get a Quote
                         </button>
