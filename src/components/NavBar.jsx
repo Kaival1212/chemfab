@@ -10,6 +10,7 @@ function NavBar() {
                 <li>Service</li>
                 <li>Products</li>
                 <li>Contact</li>
+                
                 <li className=' text-blue-400'>Get a Quote</li>
             </ul>
         </>
