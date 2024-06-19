@@ -1,6 +1,6 @@
 export default function StatsSection(){
     return (
-        <section id={'stats'} className={'bg-white h-[25vh] border-y  grid grid-cols-1 gap-2 md:grid-cols-4 items-center py-12'}>
+        <section id={'stats'} className={'bg-white h-auto md:h-[25vh] border-y  grid grid-cols-1 gap-2 md:grid-cols-4 items-center py-12'}>
 
             <div className={'text-center border-b md:border-none'}>
                 <h1 className={'text-3xl text-black font-bold'}>{'5.5M'}</h1>

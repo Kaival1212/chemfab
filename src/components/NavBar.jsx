@@ -58,8 +58,9 @@ function NavBar() {
                 <a href='#hero'>
                 <li className="text-gray-700 hover:text-gray-900">Home</li>
                 </a>
+                <a href='#about'>
                 <li className="text-gray-700 hover:text-gray-900">About</li>
-                <li className="text-gray-700 hover:text-gray-900">Service</li>
+                </a>                <li className="text-gray-700 hover:text-gray-900">Service</li>
                 <li className="text-gray-700 hover:text-gray-900">Products</li>
                 <li className="text-gray-700 hover:text-gray-900">Contact</li>
                 <li className="bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600">
