@@ -1,5 +1,7 @@
 
 import AboutSection from './components/AboutSection';
+import Contact from './components/Contact';
+import Footer from './components/Footer';
 import HeroSection from './components/HeroSection';
 import NavBar from './components/NavBar';
 import ProductsSection from './components/ProductsSection';
@@ -16,6 +18,8 @@ function App() {
       <StatsSection />
       <AboutSection/>
       <ProductsSection/>
+      <Contact/>
+      <Footer/>
     </main>
   )
 }

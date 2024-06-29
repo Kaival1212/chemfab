@@ -15,7 +15,7 @@ const AnimatedModel = () => {
             modelRef.current.rotation.x += delta * 0.1 * rotationDirection;
             if (modelRef.current.rotation.x >= 1.1) {
                 setRotationDirection(-1); // Reverse direction
-            } else if (modelRef.current.rotation.x <= -1.3) {
+            } else if (modelRef.current.rotation.x <= -1.1) {
                 setRotationDirection(1); // Forward direction
             }
         }

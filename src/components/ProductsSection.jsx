@@ -15,9 +15,9 @@ const images = [
 function ImageCard({ url, title = "ono", subtitle = 'no' }) {
     return (
         <div className='w-[326px] flex-shrink-0 p-2 container'>
-            <img src={url} alt={title} className='w-[326px] h-[326px] object-cover rounded'/>
+            <img src={url} alt={title} className='w-[326px] h-[326px] object-cover rounded-xl' />
             <h1 className='font-semibold text-lg'>{title}</h1>
-            <h2 className='font-normal text-md text-[#0D0D0D]/70'>{subtitle}</h2>
+            <h2 className='font-normal text-sm text-[#0D0D0D]/70'>{subtitle}</h2>
         </div>
     );
 }
@@ -39,14 +39,9 @@ function ProductsSection() {
 
     return (
         <section id='products' className='flex flex-col p-8'>
-            <h1 className='font-bold text-2xl md:text-4xl mb-4 md:mb-12'>Our Products</h1>
+            <h1 className='font-normal text-gray-600 text-xl md:text-3xl mb-4 md:mb-12'>Excellence in Every Fabrication</h1>
+            <h1 className='font-bold text-2xl md:text-4xl mb-4 md:mb-12'>Our Premier Products</h1>
             <div className='relative'>
-                <button
-                    onClick={scrollLeft}
-                    className='absolute left-0 top-1/2 transform -translate-y-1/2 bg-gray-500 text-white p-2 rounded-full z-10'
-                >
-                    &#8592;
-                </button>
                 <div
                     className='flex overflow-x-auto no-scrollbar'
                     ref={scrollContainerRef}
@@ -60,12 +55,7 @@ function ProductsSection() {
                         />
                     ))}
                 </div>
-                <button
-                    onClick={scrollRight}
-                    className='absolute right-0 top-1/2 transform -translate-y-1/2 bg-gray-500 text-white p-2 rounded-full z-10'
-                >
-                    &#8594;
-                </button>
+
             </div>
         </section>
     );

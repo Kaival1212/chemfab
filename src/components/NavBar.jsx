@@ -17,15 +17,14 @@ function NavBar() {
       <img src="/cover.svg" className="w-64 h-64 bg-contain" alt="Logo" />
       {screenSize > 640 ? (
         <ul className="flex gap-6 items-center cursor-pointer">
-                <a href='#hero'>
-                <li className="text-gray-700 hover:text-gray-900">Home</li>
-                </a>   
-                <a href='#about'>
-                <li className="text-gray-700 hover:text-gray-900">About</li>
-                </a>         
-          <li className="text-gray-700 hover:text-gray-900">Service</li>
-          <li className="text-gray-700 hover:text-gray-900">Products</li>
-          <li className="text-gray-700 hover:text-gray-900">Contact</li>
+          <a href='#hero'>
+            <li className="text-gray-700 hover:text-gray-900">Home</li>
+          </a>
+          <a href='#about'>
+            <li className="text-gray-700 hover:text-gray-900">About</li>
+          </a>
+          <a href='#products'><li className="text-gray-700 hover:text-gray-900">Products</li></a>
+          <a href='#contact'><li className="text-gray-700 hover:text-gray-900">Contact</li></a>
           <li className="bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600">
             Get a Quote
           </li>
@@ -56,10 +55,10 @@ function NavBar() {
 
               <ul className="space-y-2">
                 <a href='#hero'>
-                <li className="text-gray-700 hover:text-gray-900">Home</li>
+                  <li className="text-gray-700 hover:text-gray-900">Home</li>
                 </a>
                 <a href='#about'>
-                <li className="text-gray-700 hover:text-gray-900">About</li>
+                  <li className="text-gray-700 hover:text-gray-900">About</li>
                 </a>                <li className="text-gray-700 hover:text-gray-900">Service</li>
                 <li className="text-gray-700 hover:text-gray-900">Products</li>
                 <li className="text-gray-700 hover:text-gray-900">Contact</li>
