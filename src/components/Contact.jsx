@@ -46,8 +46,9 @@ function Contact() {
     };
 
     return (
-        <div className="mx-10 my-10" id='contact'>
-            <h1 className="text-2xl font-bold text-gray-600 mb-5">Contact Us</h1>
+        <div className="mx-10 my-10 grid md:grid-cols-2 gap-10 items-center" id='contact'>
+            <div>
+            <h1 className="text-2xl font-bold text-gray-600 mb-5 ">Contact Us</h1>
             <Notification message={notification.message} type={notification.type} />
             <form className="flex flex-col space-y-4" onSubmit={handleSubmit}>
                 <input
@@ -82,7 +83,9 @@ function Contact() {
                     disabled={loading}
                 >
                     {loading ? 'Sending...' : 'Send'}
-                </button>            </form>
+                </button>            
+                </form>
+                </div>
             <div className="mt-10">
                 <h2 className="text-xl font-semibold text-gray-600 mb-2">Our Location</h2>
                 <iframe
