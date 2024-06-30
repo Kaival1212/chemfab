@@ -1,4 +1,5 @@
 import { Suspense, useEffect, useState } from 'react';
+import AboutSection from './AboutSection';
 
 function NavBar() {
   const [screenSize, setScreenSize] = useState(window.innerWidth);
@@ -59,9 +60,13 @@ function NavBar() {
                 </a>
                 <a href='#about'>
                   <li className="text-gray-700 hover:text-gray-900">About</li>
-                </a>                <li className="text-gray-700 hover:text-gray-900">Service</li>
+                </a >   
+                <a href='#products'>           
                 <li className="text-gray-700 hover:text-gray-900">Products</li>
+                </a>
+                <a href='#contact'>
                 <li className="text-gray-700 hover:text-gray-900">Contact</li>
+                </a>
                 <li className="bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600">
                   Get a Quote
                 </li>
