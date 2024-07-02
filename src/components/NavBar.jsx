@@ -1,7 +1,7 @@
 import { Suspense, useEffect, useState } from 'react';
 import AboutSection from './AboutSection';
 
-function NavBar() {
+function NavBar({OpenModal}) {
   const [screenSize, setScreenSize] = useState(window.innerWidth);
   const [showMenu, setShowMenu] = useState(false);
 
@@ -26,9 +26,9 @@ function NavBar() {
           </a>
           <a href='#products'><li className="text-gray-700 hover:text-gray-900">Products</li></a>
           <a href='#contact'><li className="text-gray-700 hover:text-gray-900">Contact</li></a>
-          <li className="bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600">
+          <button onClick={()=>OpenModal(true)} className="bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600">
             Get a Quote
-          </li>
+          </button>
         </ul>
       ) : (
         <div className="relative">
@@ -67,9 +67,9 @@ function NavBar() {
                 <a href='#contact'>
                 <li className="text-gray-700 hover:text-gray-900">Contact</li>
                 </a>
-                <li className="bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600">
+                <button onClick={()=>OpenModal(true)} className="bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600">
                   Get a Quote
-                </li>
+                </button>
               </ul>
             </div>
           )}
